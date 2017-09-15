@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <a href="index1.html">这是一个index.html页面</a><br>
+    <button id='forward'>前进</button>
+    <button id='back'>后退</button>
+    <button id='refresh'>刷新</button> -->
+<style>
+	/* a{
+		font-size: 50px;
+		color: gold;
+	}
+	button{
+		width: 80px;
+		height: 50px;
+		background: hotpink;
+		font-size: 20px;
+		color: blue;
+		outline: none;
+		border-radius: 10px;
+		border: none;
+	} */
+</style>
+	<script>
+		// alert(window.screenLeft);
+		// alert(window.screenX);
+		// alert(window.screenTop);
+		// alert(window.screenY);
+		// alert(window.innerWidth);/*可视窗口*/
+		// alert(window.innerHeight);
+		// alert(window.outerWidth);
+		// alert(window.outerHeight);
+		// alert(document.documentElement.clientWidth);/*兼容*/
+		// alert(document.documentElement.clientHeight);/*兼容*/
+		// window.top
+		// window.parent
+		// window.self
+		// window.frames;
+		// alert(window==self);
+		// moveTo(100, 100);
+		// moveBy(100, 100);
+		// resizeTo(300, 300);
+		// resizeBy(300, 300);
+		// window.setInterval(function(){
+  //          alert('hongda');
+		// },1000);/*开启时间函数,按照指定的周期不断执行某个函数*/
+		// var fn=function(){
+		// 	alert(1);
+		// }
+		// window.setInterval(fn,1000);
+		// window.setInterval(()=>{alert(1)},1000);
+		// var fn=function(){
+		//  	alert(1);
+		// }
+	 //    let t=window.setInterval(fn,1000);/*清除时间函数*/
+		// window.clearInterval(t);
+		// let y=window.setTimeout(fn,1000);/*执行一次*/
+		// window.clearTimeout(y);
+		// var fn=function(){
+		// 	alert('hongda');
+		// 	setTimeout(fn,1000);
+		// }
+		// fn();
+		// confirm('确定退出吗？');
+		// open('y.htm','newwindow','width=500,height=500,top=100','toolbar');
+		// alert(1);
+		// close();
+		//表格
+		var result=table(100,100);
+		function table(row,col){
+		document.write('<table border=1 cellspacing=0 width=500 height=200>');
+		for(var i=1;i<=row;i++){
+			document.write('<tr bgcolor=red>');
+			for(var j=1;j<=i;j++){
+				document.write('<td align=center bgcolor=hotpink>'+j+'×'+i+'='+i*j+'</td>');				
+			}
+			document.write('</tr>');
+		}
+		document.write('</table>');
+		}
+		// alert(window.history.length);
+		// history.back();
+		// history.forward();
+		// history.go();
+		// let forward=document.getElementById('forward');
+		// let back=document.getElementById('back');
+		// let refresh=document.getElementById('refresh');
+		// alert(history.length);		
+		// forward.onclick=function(){
+		// 	history.go(1);
+		// }
+		// back.onclick=function(){
+		// 	history.go(0);
+		// }
+		// refresh.onclick=function(){
+		// 	history.go(-1);
+		// }
+        // location.href('www.baidu.com');
+        // location.protocol
+        // location.host
+        // location.hostname
+        // location.port
+        // location.pathname
+        // location.search
+        // location.hash
+        // location.assign
+        // location.reload
+        // location.replace
+        
+	</script>
+</body>
+</html>

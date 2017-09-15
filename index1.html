@@ -1,0 +1,46 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<title>Document</title>
+ </head>
+ <body>
+ 	<a href="index.html">这是一个index1.html页面</a><br>
+    <button id='forward'>前进</button>
+    <button id='back'>后退</button>
+    <button id='refresh'>刷新</button>
+<style>
+	a{
+		font-size: 50px;
+		color: gold;
+	}
+	button{
+		width: 80px;
+		height: 50px;
+		background: hotpink;
+		font-size: 20px;
+		color: blue;
+		outline: none;
+		border-radius: 10px;
+		border: none;
+	}
+</style>
+<script>
+	    
+		let forward=document.getElementById('forward');
+		let back=document.getElementById('back');
+		let refresh=document.getElementById('refresh');
+		alert(history.length);
+		forward.onclick=function(){
+			history.go(1);
+		}
+		back.onclick=function(){
+			history.(go(0));
+		}
+		refresh.onclick=function(){
+			history.go(-1);
+
+</script>
+ </body>
+ </html>
+ 
